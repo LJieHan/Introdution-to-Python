@@ -1,0 +1,18 @@
+def learn_conditionals(a):
+    if a > 10:
+        print('its large')
+    elif a == 5:
+        print('its just nicu')
+    else:
+        print('it is small')
+
+
+b = input('write a number\n')
+try:
+    int(b)
+
+except:
+    print('input a number!')
+    
+learn_conditionals(int(b))
+
