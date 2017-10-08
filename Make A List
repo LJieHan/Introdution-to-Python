@@ -1,0 +1,8 @@
+alist = []
+
+def Input_5_Numbers():
+    a = input('Input a number\n')
+    alist.append(int(a))
+
+for i in range(5):
+    Input_5_Numbers()
