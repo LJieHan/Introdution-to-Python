@@ -1,13 +1,14 @@
-alist [5,2,3,1,4]
+alist = [5,2,3,4,1]
 
 def Sort(alist):
-  for i in range(len(alist)-1):
-    if alist[i] > alist[i+1]:
-      x = alist[i]
-      alist[i] = alist[i+1]
-      alist[i+1] = x
-  
-for i in range (len(alist)-1):
-  Sort(alist)
-  
+    for i in range(len(alist)-1, 0, -1):
+        for j in range(i):
+            if alist[j] > alist[j+1]:
+                x= alist[j]
+                alist[j] = alist[j+1]
+                alist[j+1] = x
+
+
+Sort(alist)
+
 print(alist)
